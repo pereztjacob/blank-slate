@@ -4,7 +4,10 @@
   "description": "Practice to be done on branches of this repository",
   "main": "enzyme.setup.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src",
+    "build": "webpack",
+    "test": "jest",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
