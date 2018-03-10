@@ -35,7 +35,7 @@ class Player extends PureComponent {
   };
 
   render() {
-    const { index, rock, paper, scissors, choice, winner } = this.props;
+    const { index, rock, choice, winner } = this.props;
 
     let display;
     const choiceMade = !!choice;
@@ -49,14 +49,11 @@ class Player extends PureComponent {
         ? <div>selection made</div>
         : <div>
           <span><kbd>{rock}</kbd> ROCK</span>
-          <span><kbd>{paper}</kbd> PAPER</span>
-          <span><kbd>{scissors}</kbd> SCISSORS</span>
         </div>;
     }
      
     return (
       <div className="player">
-        <h3>Player {index + 1}</h3>
         {display}
         { hasWinner && <div>{winner === 3 ? 'TIE' : winner === index ? 'WON' : 'LOST'}</div> }
       </div>
