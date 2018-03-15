@@ -1,8 +1,8 @@
 import { SELECT, END_GAME, NEW_GAME } from './reducers';
 
 const doesPlayerWin = (p1, p2) => {
-  return (p1 === 'paper' && p2 === 'rock') ||
-    (p1 === 'rock' && p2 === 'scissors') ||
+  return (p1 === 'paper' && p2 === 'zero') ||
+    (p1 === 'zero' && p2 === 'scissors') ||
     (p1 === 'scissors' && p2 === 'paper');
 };
 

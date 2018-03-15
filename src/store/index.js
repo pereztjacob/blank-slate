@@ -2,6 +2,7 @@ import { applyMiddleware, createStore, combineReducers, compose } from 'redux';
 import thunk from 'redux-thunk';
 import promiseMiddleware from './promiseMiddleware';
 import { selections, winner } from '../components/app/reducers';
+import '../styles/main.css';
 
 const reducer = combineReducers({
   selections,

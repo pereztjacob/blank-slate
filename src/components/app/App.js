@@ -12,8 +12,7 @@ class App extends PureComponent {
     return (
       <section>
         <div className="game">
-          <Player index={0} rock="a" paper="s" scissors="d"/>
-          <Player index={1} rock="l" paper=";" scissors="'"/>
+          <Player index={0}/>
         </div>
         <div>{ winner !== null && <button onClick={newGame}>New Game</button> }</div>
       </section>
